@@ -2,7 +2,8 @@ Implementation:
 
 This challenge uses PHP, HTML, and MySQL in its implementation.
 PHP5 must be installed. In the lines ';extension=php_mysqli.dll' and either '; extension_dir = "./"' (linux) or '; extension_dir = "ext"' (on windows) in php.ini must have the ';' removed. If there is no php.ini file, copy either php.ini-development or php.ini-production into a file called php.ini. Add php to your PATH.
-A MySQL Database must then be installed. Once it is installed, change lines 13-15 so that they have the proper credentials. Once this is done, run setup/setupdb.php. This creates 89,999 users with random names and passwords and 1 user with the flag for the password.
+A MySQL Database must then be installed. Create a new table called ctf with the following columns: A unique auto-incrementing index/primary key, a unique non-null 'name' field, and a non-null 'password' field.
+Change lines 13-15 of setup/setupdb.php so that they have the proper credentials. Once this is done, run setup/setupdb.php. This creates 89,999 users with random names and passwords and 1 user with the flag for the password.
 You should then add the ctfuser to MySQL. Create a new user with the credentials present in utils/cred.php. Grant that user permissions only to select from the ctf schema.
 You will need to change the filepath on line 26 in rootfolder/retrieve.php so that it points to the correct location of utils/cred.php. You will also have to edit the $servername variable in utils/cred.php if it needs to point to MySQL non-locally.
 Finally, you must have a PHP-capable webserver on the system which will serve rootfolder/retrievepassword.html and retrieve.php, and ONLY those files.
