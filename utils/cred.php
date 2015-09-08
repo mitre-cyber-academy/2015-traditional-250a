@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "ctfuser";
-$password = "MCA-5a91fe4d";
-$dbname="ctf";
+$username = "pwnies";
+$password = "uQqQA8U9mCZvyjbF"
+$dbname="sql_injection";
 ?>

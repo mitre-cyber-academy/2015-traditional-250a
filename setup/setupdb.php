@@ -12,8 +12,8 @@ $lns=preg_split('/\s+/',$lastnames);
 
 $servername = "localhost";
 $username = "root";
-$password = "rootpw";
-$dbname="ctf";
+$password = "thA4RaT3stubaz2w2ethAnu4ruquphev";
+$dbname="sql_injection";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
