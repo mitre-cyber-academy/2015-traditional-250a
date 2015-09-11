@@ -40,3 +40,8 @@ This would have to continue until they found the whole flag. This could take a w
 With a little more intelligence in our query design, we can do a binary search as part of our sql injection, with something like:
 ' OR password < 'MCA-88888888
 either for all of the queries, or to narrow down the possibilities before doing character-by-character entry.
+
+To Deploy:
+
+Pull this repository
+Run `docker-compose up -d`
